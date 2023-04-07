@@ -24,7 +24,6 @@ const LEVELS =[
     ]
 
 scene('game', ({ levelIdx, score}) => {
-    // DEFINGING SPRITES
     gravity(2400)
 
 // DEFINING SPRITES
