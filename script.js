@@ -1,11 +1,10 @@
 kaboom()
 
-//SPRITES
-loadSprite('toto', 'img/toto.png')
+// SPRITES
+loadSprite('toto', 'img/main.png')
 loadSprite('coin', 'img/coin.png')
-loadSprite('enemy', 'img/enemy.png')
+// loadSprite('enemy', 'img/enemy.png')
 loadSprite('grass', 'img/grass.png')
-loadSprite('stone', 'img/stone.png')
 loadSprite('door', 'img/door.png')
 
 // LEVELS
@@ -21,11 +20,11 @@ const LEVELS =[
         '====      ========  ===   ',
     ]
 
-
 scene('game', ({ levelIdx, score}) => {
     // DEFINGING SPRITES
     gravity(2400)
 
+// DEFINING SPRITES
     const level = addLevel(LEVELS[levelIdx || 0], {
         width: 64,
         height: 64,
