@@ -11,7 +11,8 @@ loadSprite('door', 'img/door.png')
 
 // LEVELS
 
-const LEVELS = [
+const SPEED = 480
+const LEVELS =[
 
         '                          ',
         '                          ',
@@ -22,25 +23,28 @@ const LEVELS = [
         '====      ========  ===   ',
     ]
 
+scene('game', ({ levelIdx, score}) => {
+    // DEFINGING SPRITES
+    gravity(2400)
 
 // DEFINING SPRITES
+    const level = addLevel(LEVELS[levelIdx || 0], {
+        width: 64,
+        height: 64,
 
-const levelConf = ({
-    width: 64,
-    height: 64,
+        '=': () => [
+            sprite('grass'),
+            area(),
+            solid(),
+            origin('bot'),
+        ],
 
-    '=': () => [
-        sprite('grass'),
-        area(),
-        solid(),
-        origin('bot'),
-    ],
+        '$': () => [
+            sprite('coin'),
+            area(),
+            solid(),
+            origin('bot'),
+        ],
 
-    '$': () => [
-        sprite('coin'),
-        area(),
-        solid(),
-        origin('bot'),
-    ],
-
+    })
 })
