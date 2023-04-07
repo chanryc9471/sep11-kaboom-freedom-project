@@ -1,6 +1,6 @@
 kaboom()
 
-//SPRITES
+// SPRITES
 loadSprite('toto', 'img/main.png')
 loadSprite('coin', 'img/coin.png')
 // loadSprite('enemy', 'img/enemy.png')
@@ -22,11 +22,11 @@ const LEVELS =
     ]
 
 
-// DEFINGING SPRITES
+// DEFINING SPRITES
 
 const levelConf = {
     width: 64,
-    height: 64, 
+    height: 64,
 
     '=': () => [
         sprite('grass'),
