@@ -1,8 +1,9 @@
-kaboom()
+kaboom({
+    background: [176, 201, 217]
+})
 
-<<<<<<< HEAD
 // SPRITES
-loadSprite('toto', 'img/main.png')
+loadSprite('toto', 'img/toto.png')
 loadSprite('coin', 'img/coin.png')
 // loadSprite('enemy', 'img/enemy.png')
 loadSprite('grass', 'img/grass.png')
@@ -10,7 +11,7 @@ loadSprite('door', 'img/door.png')
 
 // LEVELS
 
-const LEVELS =[
+const LEVELS = [
 
         '                          ',
         '                          ',
@@ -24,7 +25,7 @@ const LEVELS =[
 
 // DEFINING SPRITES
 
-const levelConf = {
+const levelConf = ({
     width: 64,
     height: 64,
 
@@ -42,4 +43,4 @@ const levelConf = {
         origin('bot'),
     ],
 
-}
+})
