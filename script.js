@@ -1,24 +1,24 @@
 kaboom()
 
+<<<<<<< HEAD
 // SPRITES
 loadSprite('toto', 'img/main.png')
 loadSprite('coin', 'img/coin.png')
 // loadSprite('enemy', 'img/enemy.png')
 loadSprite('grass', 'img/grass.png')
-loadSprite('stone', 'img/stone.png')
 loadSprite('door', 'img/door.png')
 
 // LEVELS
 
-const LEVELS =
-    [
+const LEVELS =[
+
         '                          ',
         '                          ',
         '                          ',
         '                          ',
-        '                          ',
-        '     $$$                  ',
-        '                          ',
+        '      $$$      $$   ===   ',
+        '      ===    =====        ',
+        '====      ========  ===   ',
     ]
 
 
@@ -34,6 +34,7 @@ const levelConf = {
         solid(),
         origin('bot'),
     ],
+
     '$': () => [
         sprite('coin'),
         area(),
